@@ -65,8 +65,8 @@ public class Jt809_1200_MessageHandler extends MessageHandler {
             gpsHistory.setExcrypt(String.valueOf(message.get("encrypt")));
         }
 
-        if (message.containsKey("Ing")) {
-            gpsHistory.setLon(BigDecimal.valueOf((Double) message.get("Ing")));
+        if (message.containsKey("lng")) {
+            gpsHistory.setLon(BigDecimal.valueOf((Double) message.get("lng")));
         }
         if (message.containsKey("lat")) {
             gpsHistory.setLat(BigDecimal.valueOf((Double) message.get("lat")));
